@@ -314,6 +314,7 @@ footer {
     }
 
     .service {
+        width: 11.25rem;
         margin: 0.5rem;
         box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.702);
     }
@@ -329,7 +330,7 @@ footer {
     }
 
     .courses {
-        width: 24rem;
+        width: 23rem;
         margin-top: 5rem;
         margin-bottom: 3rem;
         display: flex;
@@ -337,8 +338,8 @@ footer {
     }
 
     .course-1 p {
-        margin: 1rem;
-        text-align: center;
+        margin: 2rem;
+        text-align: justify;
     }
 
     .course-1 {
@@ -347,8 +348,8 @@ footer {
     }
 
     .course-2 p {
-        margin: 1rem;
-        text-align: center;
+        margin: 2rem;
+        text-align: justify;
     }
 
     .course-2 {
@@ -365,7 +366,7 @@ footer {
     }
 
     .section_contact .section_form {
-        width: 25rem;
+        width: 23rem;
         display: flex;
         justify-content: center;
     }
