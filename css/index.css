@@ -294,6 +294,25 @@ footer {
     .section_services {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .service {
+        width: 190px;
+    }
+
+    .courses {
+        width: 56rem;
+    }
+}
+
+@media screen and (max-width: 926px) {
+
+    .courses {
+        width: 53rem;
+    }
+
+    .footer_menu a {
+        margin: .5rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
