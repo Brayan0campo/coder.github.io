@@ -293,7 +293,6 @@ footer {
 
     .section_services {
         grid-template-columns: repeat(3, 1fr);
-        padding: 11rem auto;
     }
 }
 
@@ -310,8 +309,8 @@ footer {
     }
 
     .section_services {
+        justify-content: center;
         grid-template-columns: repeat(2, 1fr);
-        padding: 11rem auto;
     }
 
     .service {
