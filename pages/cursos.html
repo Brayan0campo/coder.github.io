@@ -7,33 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursos | Coder</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
     <header>
-        <div class="header_menu">
-            <a href="../index.html">Coder</a>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/cursos.html">Cursos</a></li>
-                    <li><a href="../pages/planes.html">Planes</a></li>
-                    <li><a href="../pages/about.html">About</a></li>
-                    <li><a href="../pages/login.html">Log In</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Coder</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+                    <i class="navbar-toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                        <a class="nav-link" href="#">Cursos</a>
+                        <a class="nav-link" href="#">Planes</a>
+                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Log In</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
         <div class="header_courses">
             <div class="content_courses">
-                <h1>Explora Nuestros Cursos</h1>
-                <P>
-                    Elige entre nuestros cursos para aprender desde cero o desarrollar <br>
-                    las habilidades más demandadas del trabajo en el desarrollo web.
+                <h1>EXPLORA NUESTROS CURSOS</h1>
+                <p>
+                    Elige entre nuestros cursos para aprender desde cero o desarrollar las habilidades más demandadas
+                    del trabajo en el desarrollo web.
                 </p>
-                <a class="btn_plans" href="../pages/planes.html">Planes</a>
-                <a class="btn_login" href="../pages/login.html">Ingresa a Coder</a>
+                <a class="btn_plans" href="./planes.html">Planes</a>
+                <a class="btn_login" href="./login.html">Ingresa a Coder</a>
             </div>
             <img src="../images/cursos/image_headerCursos.png">
         </div>
@@ -43,32 +51,32 @@
         <section class="courses_container">
             <div class="course">
                 <h2>HTML + CSS</h2>
-                <P>Programa del curso</P>
+                <h6>Programa del curso</h6>
                 <ul>
-                    <li><h3>• Prototipado y conceptos básicos de HTML</h3></li>
-                    <li><h3>• Primeros pasos con HTML</h3></li>
-                    <li><h3>• Incluyendo CSS a nuestro proyecto</h3></li>
-                    <li><h3>• CSS + Box Modeling</h3></li>
-                    <li><h3>• Flexbox</h3></li>
-                    <li><h3>• GRIDS</h3></li>
-                    <li><h3>• Animaciones</h3></li>
-                    <li><h3>• Servidores: tu sitio en línea</h3></li>
-                    <li><h3>• Proyecto final</h3></li>
+                    <li><p>• Prototipado y conceptos básicos de HTML</p></li>
+                    <li><p>• Primeros pasos con HTML</p></li>
+                    <li><p>• Incluyendo CSS a nuestro proyecto</p></li>
+                    <li><p>• CSS + Box Modeling</p></li>
+                    <li><p>• Flexbox</p></li>
+                    <li><p>• GRIDS</p></li>
+                    <li><p>• Animaciones</p></li>
+                    <li><p>• Servidores: tu sitio en línea</p></li>
+                    <li><p>• Proyecto final</p></li>
                 </ul>
             </div>
             <div class="course">
                 <h2>JAVASCRIPT</h2>
-                <P>Programa del curso</P>
+                <h6>Programa del curso</h6>
                 <ul>
-                    <li><h3>• Conceptos generales: Sintaxis y variables</h3></li>
-                    <li><h3>• Control de flujos</h3></li>
-                    <li><h3>• Ciclos e iteraciones</h3></li>
-                    <li><h3>• Funciones</h3></li>
-                    <li><h3>• DOM</h3></li>
-                    <li><h3>• Objetos</h3></li>
-                    <li><h3>• Arrays</h3></li>
-                    <li><h3>• Eventos</h3></li>
-                    <li><h3>• Librerías</h3></li>
+                    <li><p>• Conceptos generales: Sintaxis y variables</p></li>
+                    <li><p>• Control de flujos</p></li>
+                    <li><p>• Ciclos e iteraciones</p></li>
+                    <li><p>• Funciones</p></li>
+                    <li><p>• DOM</p></li>
+                    <li><p>• Objetos</p></li>
+                    <li><p>• Arrays</p></li>
+                    <li><p>• Eventos</h3></li>
+                    <li><p>• Librerías</p></li>
                 </ul>
             </div>
         </section>
@@ -89,33 +97,38 @@
         </section>
 
         <section class="courses_coming">
-            <h2>Cooming soon...</h2>
-            <div class="course_coming">
-                <img src="../images/cursos/icon_comigCursos1.png">
-            </div>
-            <div class="course_coming">
-                <img src="../images/cursos/icon_comigCursos2.png">
-            </div>
-            <div class="course_coming">
-                <img src="../images/cursos/icon_comigCursos3.png">
-            </div>
-            <div class="course_coming">
-                <img src="../images/cursos/icon_comigCursos4.png">
+            <h4>COMING SOON...</h4>
+            <div class="courses_content">
+                <div class="course_coming">
+                    <img src="../images/cursos/icon_comigCursos1.png">
+                </div>
+                <div class="course_coming">
+                    <img src="../images/cursos/icon_comigCursos2.png">
+                </div>
+                <div class="course_coming">
+                    <img src="../images/cursos/icon_comigCursos3.png">
+                </div>
+                <div class="course_coming">
+                    <img src="../images/cursos/icon_comigCursos4.png">
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer_pages">
         <div class="footer_menu">
-            <a href="./index.html">Coder</a>
-            <div class="footer_links">
-                <li><a href="#">Preguntas frecuentes</a></li>
-                <li><a href="#">Términos y Condiciones</a></li>
-                <li><a href="#">Privacidad</a></li>
-                <p>&copy; 2023 Brayan - Todos los derechos reservados</p>
-            </div>
+            <h2>Coder</h2>
+            <a href="#">Preguntas frecuentes</a></li>
+            <a href="#">Términos y Condiciones</a></li>
+            <a href="#">Privacidad</a></li>
+            <p>&copy; 2023 Brayan - Todos los derechos reservados</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+
 </body>
 
 </html>
