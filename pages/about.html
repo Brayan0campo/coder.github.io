@@ -7,27 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Coder</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
     <header>
-        <div class="header_menu">
-            <a href="../index.html">Coder</a>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/cursos.html">Cursos</a></li>
-                    <li><a href="../pages/planes.html">Planes</a></li>
-                    <li><a href="../pages/about.html">About</a></li>
-                    <li><a href="../pages/login.html">Log In</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Coder</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+                    <i class="navbar-toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="../pages/cursos.html">Cursos</a>
+                        <a class="nav-link" href="#">Planes</a>
+                        <a class="nav-link" href="../pages/about.html">About</a>
+                        <a class="nav-link" href="#">Log In</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-        <div class="header_courses">
-            <div class="content_courses">
-                <h1>Transformación mediante la educación</h1>
+
+        <div class="header_about">
+            <div class="content_about">
+                <h1>TRANSFORMACIÓN MEDIANTE LA EDUCACIÓN</h1>
                 <p>
                     Estamos construyendo un lugar donde cualquiera pueda aprender y dominar la programación de forma
                     divertida y con un gran crecimiento profesional.
@@ -39,31 +49,35 @@
 
     <main>
         <section class="section_companies">
-            <h2>Compañías que confían en nosotros</h2>
-            <div class="company">
-                <img src="../images/about/image_company1.svg">
-            </div>
-            <div class="company">
-                <img src="../images/about/image_company2.svg">
-            </div>
-            <div class="company">
-                <img src="../images/about/image_company3.svg">
-            </div>
-            <div class="company">
-                <img src="../images/about/image_company4.svg">
-            </div>
-            <div class="company">
-                <img src="../images/about/image_company5.svg">
+            <h2>COMPAÑÍAS QUE CONFÍAN EN NOSOTROS</h2>
+            <div class="section_company">
+                <div class="company">
+                    <img src="../images/about/image_company1.svg">
+                </div>
+                <div class="company">
+                    <img src="../images/about/image_company2.svg">
+                </div>
+                <div class="company">
+                    <img src="../images/about/image_company3.svg">
+                </div>
+                <div class="company">
+                    <img src="../images/about/image_company4.svg">
+                </div>
+                <div class="company">
+                    <img src="../images/about/image_company5.svg">
+                </div>
             </div>
         </section>
 
         <section class="section_mission">
-            <h2>Nuestra misión</h2>
+            <h2>NUESTRA MISIÓN</h2>
             <div class="mission">
                 <img src="../images/about/image_missionAbout.png">
                 <div class="mission_text">
-                    <h4>Existen tres compromisos que hemos asumido con Coder. Nos hemos basado en ellos desde el primer
-                        día:</h4>
+                    <h4>
+                        Existen tres compromisos que hemos asumido con Coder. Nos hemos basado en ellos desde el primer
+                        día:
+                    </h4>
                     <P>• Aumentar el acceso a la educación de alta calidad para todos, en todas partes</P>
                     <p>• Mejorar la enseñanza y el aprendizaje en el area online</p>
                     <p>• Mejorar la enseñanza y el aprendizaje a través de la investigación</p>
@@ -72,33 +86,38 @@
         </section>
 
         <section class="section_values">
-            <h2>Nuestros principios</h2>
-            <div class="value">
-                <img src="../images/about/icon_value1.png">
-                <p>Coder debe ser agradable, estimulante y valioso.</p>
-            </div>
-            <div class="value">
-                <img src="../images/index/icon_mainService3.png">
-                <p>Coder debe fomentar una mentalidad de crecimiento.</p>
-            </div>
-            <div class="value">
-                <img src="../images/about/icon_value3.png">
-                <p>El disfrute del aprendizaje son lo más importantes.</p>
+            <h2>NUESTROS PRINCIPIOS</h2>
+            <div class="values">
+                <div class="value">
+                    <img src="../images/about/icon_value1.png">
+                    <p>Coder debe ser agradable, estimulante y valioso.</p>
+                </div>
+                <div class="value">
+                    <img src="../images/index/icon_mainService3.png">
+                    <p>Coder debe fomentar una mentalidad de crecimiento.</p>
+                </div>
+                <div class="value">
+                    <img src="../images/about/icon_value3.png">
+                    <p>El disfrute del aprendizaje son lo más importantes.</p>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer_pages">
         <div class="footer_menu">
-            <a href="./index.html">Coder</a>
-            <div class="footer_links">
-                <li><a href="#">Preguntas frecuentes</a></li>
-                <li><a href="#">Términos y Condiciones</a></li>
-                <li><a href="#">Privacidad</a></li>
-                <p>&copy; 2023 Brayan - Todos los derechos reservados</p>
-            </div>
+            <h2>Coder</h2>
+            <a href="#">Preguntas frecuentes</a></li>
+            <a href="#">Términos y Condiciones</a></li>
+            <a href="#">Privacidad</a></li>
+            <p>&copy; 2023 Brayan - Todos los derechos reservados</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+
 </body>
 
 </html>

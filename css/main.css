@@ -452,6 +452,180 @@ footer {
 }
 
 /* ------------------------------- */
+/* ---- Inicio estilos-about ---- */
+/* ------------------------------- */
+
+.header_about {
+    max-width: 68.75rem;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_about img {
+    width: 23rem;
+    margin-right: 3.75rem;
+}
+
+.content_about {
+    color: #F5F5F5;
+    font-weight: bold;
+    margin-left: 3.4375rem;
+    max-width: 50%;
+}
+
+.content_about h1 {
+    font-size: 1.875em;
+    font-weight: bold;
+}
+
+.content_about p {
+    margin-top: 1rem;
+    font-size: 0.9em;
+}
+
+/* ------------------------------- */
+
+.section_companies {
+    max-width: 68.75rem;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section_companies h2 {
+    color: #263238;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 2.8125rem;
+}
+
+.section_company {
+    margin-top: 1.25rem;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 2.8125rem;
+}
+
+.company {
+    text-align: center;
+    background-color: #263238;
+    padding: 1rem;
+    width: 7rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 .5rem 1.25rem 0 rgba(0, 0, 0, 0.57);
+}
+
+.company img {
+    width: 2.5rem;
+}
+
+/* ------------------------------- */
+
+.section_mission {
+    max-width: 68.75rem;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section_mission h2 {
+    color: #263238;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 8.75rem;
+}
+
+.mission {
+    margin: 2.5rem 0;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: #62249b;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.57);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mission_text {
+    color: #F5F5F5;
+    margin-right: 4rem;
+    max-width: 50%;
+}
+
+.mission_text h4 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    line-height: 2.125rem;
+}
+
+.mission_text p {
+    font-size: 0.8em;
+}
+
+.mission img {
+    width: 22rem;
+    margin: 0 3rem 0 2rem;
+}
+
+/* ------------------------------- */
+
+.section_values {
+    max-width: 68.75rem;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section_values h2 {
+    color: #263238;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 5rem;
+}
+
+.values {
+    margin: 2.5rem 0 8.75rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2.8125rem;
+}
+
+.value {
+    color: #F5F5F5;
+    background-color: #263238;
+    border-radius: 0.3rem;
+    text-align: center;
+    width: 20rem;
+    padding: 1rem;
+    box-shadow: 0 .5rem 1.25rem 0 rgba(0, 0, 0, 0.57);
+}
+
+.value p {
+    margin: 2rem;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.value img {
+    width: 4.2rem;
+    margin-top: 2rem;
+}
+
+/* ------------------------------- */
 
 @media screen and (max-width: 1024px) {
 
@@ -465,6 +639,10 @@ footer {
 
     .courses {
         width: 56rem;
+    }
+
+    .courses_info {
+        flex-direction: column;
     }
 }
 
@@ -499,7 +677,7 @@ footer {
     .service {
         width: 11.25rem;
         margin: 0.5rem;
-        box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.702);
+        box-shadow: 0 .5rem 1.25rem 0 rgba(0, 0, 0, 0.702);
     }
 
     .section_courses h2 {
@@ -573,10 +751,20 @@ footer {
         margin-bottom: 1rem;
     }
 
+    /* ------------------------------- */
+
     .content_courses {
         text-align: center;
         margin: 2.5rem auto;
-        max-width: 70%;
+        max-width: 75%;
+    }
+
+    .btn_plans {
+        margin-top: 2rem;
+    }
+
+    .btn_login {
+        margin: 1.5rem 0 0;
     }
 
     .header_courses img {
@@ -589,7 +777,7 @@ footer {
 
     .course {
         max-width: 85%;
-        margin-top: 50px;
+        margin-top: 3.125rem;
         text-align: center;
     }
 
@@ -601,15 +789,17 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .courses_info {
-        flex-direction: column;
-    }
-
     .info {
+        margin: 3.125rem 0;
         width: 21.875rem;
     }
 
     .courses_info img {
         max-width: 85%;
     }
+
+    /* ------------------------------- */
+
+
+
 }
