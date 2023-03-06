@@ -638,7 +638,7 @@ footer {
     justify-content: center;
 }
 
-.main_login img {
+.main_login .img_login {
     width: 26rem;
     margin: 5rem 8rem 5rem 0;
 }
@@ -935,12 +935,13 @@ footer {
 
     /* ------------------------------- */
 
-    .main_login img {
+    .main_login .img_login {
         display: none;
     }
 
     .main_form {
-        margin: 5rem 0;
+        margin: 6rem 0;
+        max-width: 60%;
     }
 
     .main_form h2 {
