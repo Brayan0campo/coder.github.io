@@ -236,7 +236,7 @@ nav.navbar {
     border-radius: .125rem;
     color: #F5F5F5;
     margin-bottom: 1rem;
-    width: 270px;
+    width: 16.875rem;
     outline: none;
 }
 
@@ -626,6 +626,83 @@ footer {
 }
 
 /* ------------------------------- */
+/* ---- Inicio estilos-log in ---- */
+/* ------------------------------- */
+
+.main_login {
+    max-width: 68.75rem;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_login img {
+    width: 26rem;
+    margin: 5rem 8rem 5rem 0;
+}
+
+.main_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_form h2 {
+    color: #263238;
+    font-size: 1.625em;
+    font-weight: bold;
+    margin-bottom: 2.8125rem;
+}
+
+.main_form .input_form {
+    border: none;
+    border-bottom: .0625rem solid #263238;
+    background-color: #F5F5F5;
+    margin-bottom: 1.5rem;
+}
+
+.main_form label {
+    color: #263238;
+    font-weight: bold;
+    font-size: .8125em;
+}
+
+.main_form button {
+    border: none;
+    border-radius: .1875rem;
+    cursor: pointer;
+    color: #F5F5F5;
+    background-color: #62249b;
+    font-weight: bold;
+    padding: .5625rem 4.375rem;
+    margin-top: 3rem;
+}
+
+.accounts_login {
+    color: #263238;
+    font-weight: bold;
+    margin-top: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.accounts_login h3 {
+    color: #263238;
+    font-size: 1.125em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.accounts_login img {
+    width: 1.6rem;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border-radius: .9375rem;
+}
 
 @media screen and (max-width: 1024px) {
 
@@ -857,4 +934,65 @@ footer {
     }
 
     /* ------------------------------- */
+
+    .main_login img {
+        display: none;
+    }
+
+    .main_form {
+        margin: 5rem 0;
+    }
+
+    .main_form h2 {
+        text-align: center;
+    }
+
+    .main_form .input_form {
+        border: none;
+        border-bottom: .0625rem solid #263238;
+        background-color: #F5F5F5;
+        margin-bottom: 1.5rem;
+    }
+
+    .main_form label {
+        color: #263238;
+        font-weight: bold;
+        font-size: .8125em;
+    }
+
+    .main_form button {
+        border: none;
+        border-radius: .1875rem;
+        cursor: pointer;
+        color: #F5F5F5;
+        background-color: #62249b;
+        font-weight: bold;
+        padding: .5625rem 4.375rem;
+        margin-top: 3rem;
+    }
+
+    .accounts_login {
+        color: #263238;
+        font-weight: bold;
+        margin-top: 3rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .accounts_login h3 {
+        color: #263238;
+        font-size: 1.125em;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .accounts_login img {
+        width: 1.6rem;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        border-radius: .9375rem;
+    }
 }
