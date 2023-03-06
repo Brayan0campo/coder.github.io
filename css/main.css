@@ -128,7 +128,7 @@ nav.navbar {
 /* ------------------------------- */
 
 .section_courses {
-    max-width: 68.75rem;
+    max-width: 90vw;
     margin: 4.375rem auto;
 }
 
@@ -546,7 +546,7 @@ footer {
 .mission {
     margin: 2.5rem 0;
     padding: 1rem;
-    width: 100%;
+    width: 90vw;
     border-radius: 0.5rem;
     background-color: #62249b;
     box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.57);
@@ -828,7 +828,8 @@ footer {
     }
 
     .section_mission h2 {
-        font-size: 1em;
+        font-size: 1.2em;
+        margin-top: 7rem;
     }
 
     .mission {
@@ -847,7 +848,7 @@ footer {
     }
 
     .section_values h2 {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .values {
