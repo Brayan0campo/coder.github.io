@@ -800,6 +800,60 @@ footer {
 
     /* ------------------------------- */
 
+    .header_about img {
+        display: none;
+    }
 
+    .content_about {
+        margin: 40px;
+        max-width: 100%;
+    }
 
+    .content_about h1 {
+        text-align: center;
+    }
+
+    .content_about p {
+        text-align: center;
+    }
+
+    .section_companies h2 {
+        font-size: 1em;
+    }
+
+    .section_company {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 0.8rem;
+        grid-row-gap: 1.5rem;
+    }
+
+    .section_mission h2 {
+        font-size: 1em;
+    }
+
+    .mission {
+        width: 85%;
+        flex-direction: column;
+    }
+
+    .mission_text {
+        text-align: justify;
+        margin: .9375rem;
+        max-width: 100%;
+    }
+
+    .mission img {
+        width: 17rem;
+    }
+
+    .section_values h2 {
+        font-size: 1em;
+    }
+
+    .values {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 2.8125rem;
+    }
+
+    /* ------------------------------- */
 }
