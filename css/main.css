@@ -641,6 +641,7 @@ footer {
 .header_about img {
     width: 23rem;
     margin-right: 3.75rem;
+    animation: float 2.8s ease-in-out infinite;
 }
 
 .content_about {
@@ -688,11 +689,18 @@ footer {
 
 .company {
     text-align: center;
+    cursor: pointer;
     background-color: #263238;
     padding: 1rem;
     width: 7rem;
     border-radius: 0.3rem;
+    transition: 0.5s;
     box-shadow: 0 .5rem 1.25rem 0 rgba(0, 0, 0, 0.57);
+}
+
+.company:hover {
+    transform: translateY(-12%);
+    transition: 0.5s;
 }
 
 .company img {
@@ -734,6 +742,15 @@ footer {
     color: #F5F5F5;
     margin-right: 4rem;
     max-width: 50%;
+    padding: 1.25rem;
+    transition: 0.5s;
+}
+
+.mission:hover .mission_text {
+    background-color: #263238;
+    border-radius: 10px;
+    transform: translateX(-8%);
+    transition: 0.5s;
 }
 
 .mission_text h4 {
@@ -750,6 +767,7 @@ footer {
 .mission img {
     width: 22rem;
     margin: 0 3rem 0 2rem;
+    animation: float 2.8s ease-in-out infinite;
 }
 
 /* ------------------------------- */
@@ -785,7 +803,13 @@ footer {
     text-align: center;
     width: 20rem;
     padding: 1rem;
+    transition: 0.5s;
     box-shadow: 0 .5rem 1.25rem 0 rgba(0, 0, 0, 0.57);
+}
+
+.value:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .value p {
@@ -797,6 +821,12 @@ footer {
 .value img {
     width: 4.2rem;
     margin-top: 2rem;
+    transition: 0.5s;
+}
+
+.value:hover img {
+    transform: scale(1.5);
+    transition: 0.5s;
 }
 
 /* ------------------------------- */
@@ -815,6 +845,7 @@ footer {
 .main_login .img_login {
     width: 26rem;
     margin: 5rem 8rem 5rem 0;
+    animation: float 2.8s ease-in-out infinite;
 }
 
 .main_form {
@@ -851,6 +882,12 @@ footer {
     font-weight: bold;
     padding: .5625rem 4.375rem;
     margin-top: 3rem;
+    transition: 0.5s;
+}
+
+.main_form button:hover {
+    background-color: #263238;
+    transition: 0.5s;
 }
 
 .accounts_login {
@@ -876,6 +913,12 @@ footer {
     padding: 0;
     cursor: pointer;
     border-radius: .9375rem;
+    transition: 0.5s;
+}
+
+.accounts_login img:hover {
+    transform: scale(1.4);
+    transition: 0.5s;
 }
 
 @media screen and (max-width: 1024px) {
