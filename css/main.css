@@ -42,6 +42,10 @@ nav.navbar {
     color: #263238;
 }
 
+.container-fluid .navbar-brand:hover {
+    color: #F5F5F5;
+}
+
 .container-fluid .collapse {
     justify-content: end;
 }
@@ -86,9 +90,10 @@ nav.navbar {
     text-transform: uppercase;
 }
 
-.content img {
+.img_content {
     margin: 3rem auto 2rem;
     width: 21.875rem;
+    animation: float 2.8s ease-in-out infinite;
 }
 
 /* ------------------------------- */
@@ -106,11 +111,18 @@ nav.navbar {
 .service {
     text-align: center;
     background-color: #263238;
+    cursor: pointer;
     width: 12rem;
     padding: 1.25rem;
     margin: 1.25rem;
     border-radius: .375rem;
+    transition: 0.5s;
     box-shadow: 0 .5rem 1.875rem 0 rgba(0, 0, 0, 0.802);
+}
+
+.service:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
 }
 
 .service img {
@@ -128,8 +140,8 @@ nav.navbar {
 /* ------------------------------- */
 
 .section_courses {
-    max-width: 90vw;
     margin: 4.375rem auto;
+    overflow-x: hidden;
 }
 
 .section_courses h2 {
@@ -142,9 +154,9 @@ nav.navbar {
 .courses {
     color: #F5F5F5;
     background-color: #62249b;
-    box-shadow: 0 .5rem 1.875rem 0 rgba(3, 3, 3, 0.801);
+    box-shadow: 0 .5rem 1.8rem 0 rgba(3, 3, 3, 0.801);
     border-radius: 1rem;
-    margin: 6rem auto 8rem;
+    margin: 6rem 5rem 8rem;
 
     display: flex;
     align-items: center;
@@ -209,6 +221,7 @@ nav.navbar {
     text-decoration: none;
     padding: .9375rem 1.5625rem;
     border-radius: .625rem;
+    transition: 0.5s;
 
     display: inline-block;
 }
@@ -216,7 +229,7 @@ nav.navbar {
 .btn_info:hover {
     color: #F5F5F5;
     background-color: #263238;
-    transition: 0.6s;
+    transition: 0.5s;
 }
 
 /* ------------------------------- */
@@ -235,9 +248,19 @@ nav.navbar {
     margin: 0 auto;
     width: 45rem;
     top: 3.8rem;
-
+    transition: transform 0.5s ease-in-out;
     display: flex;
     align-items: center;
+}
+
+.section_form:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.courses img {
+    width: 15rem;
+    margin: 1.25rem 3.125rem 1.25rem 3.125rem;
 }
 
 .section_form img {
@@ -276,6 +299,13 @@ nav.navbar {
     color: #263238;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.form_contact button:hover {
+    color: #F5F5F5;
+    background-color: #62249b;
+    transition: 0.5s;
 }
 
 /* ------------------------------- */
@@ -338,6 +368,7 @@ footer {
 .header_courses img {
     width: 23rem;
     margin: 0.5rem 5rem 0.5rem 0;
+    animation: float 2.8s ease-in-out infinite;
 }
 
 .content_courses {
@@ -365,16 +396,30 @@ footer {
     padding: 0.7rem 4.5rem;
     border-radius: 0.3rem;
     margin-top: 3rem;
+    transition: 0.5s;
+}
+
+.btn_plans:hover {
+    color: #F5F5F5;
+    background-color: #263238;
+    transition: 0.5s;
 }
 
 .btn_login {
-    color: #F5F5F5;
-    background-color: #263238;
+    color: #62249b;
+    background-color: #F5F5F5;
     text-decoration: none;
     display: inline-block;
     padding: 0.7rem 2.2rem;
     border-radius: 0.3rem;
     margin-left: 2rem;
+    transition: 0.5s;
+}
+
+.btn_login:hover {
+    color: #F5F5F5;
+    background-color: #263238;
+    transition: 0.5s;
 }
 
 /* ------------------------------- */
@@ -390,11 +435,20 @@ footer {
 
 .course {
     color: #263238;
+    cursor: pointer;
     width: 32rem;
     padding: 3rem;
     margin: 6rem 0 4rem 0;
     border-radius: 0.7rem;
+    transition: 0.5s;
     box-shadow: 0 .5rem 1.25rem 0 rgba(0, 0, 0, 0.25);
+}
+
+.course:hover {
+    color: #F5F5F5;
+    background: #263238;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .course h2 {
@@ -406,8 +460,8 @@ footer {
 }
 
 .course p {
-    color: #505050;
-    font-weight: normal;
+    color: #adadad;
+    font-weight: bold;
     font-size: 0.85em;
 }
 
@@ -423,12 +477,19 @@ footer {
 }
 
 .info {
+    cursor: pointer;
     margin: 3rem;
     width: 26rem;
     padding: 1.5rem;
     border-radius: 0.6rem;
+    transition: 0.5s;
     box-shadow: 0 .5rem 1.25rem 0 rgba(0, 0, 0, 0.57);
     background-color: #263238;
+}
+
+.info:hover {
+    transform: translateX(-10%);
+    transition: 0.5s;
 }
 
 .courses_info p {
@@ -440,6 +501,7 @@ footer {
 
 .courses_info img {
     width: 35rem;
+    animation: float 2.8s ease-in-out infinite;
 }
 
 /* ------------------------------- */
@@ -470,9 +532,16 @@ footer {
     padding: 1.25rem 1.25rem;
     margin: 1.25rem 1.25rem;
     border-radius: .3125rem;
+    transition: 0.5s;
     box-shadow: 0 .5rem 1.25rem 0 rgba(0, 0, 0, 0.57);
     width: 8rem;
     cursor: pointer;
+}
+
+.course_coming:hover {
+    background-color: #455a64;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .course_coming img {
@@ -1142,5 +1211,19 @@ footer {
         padding: 0;
         cursor: pointer;
         border-radius: .9375rem;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, -8px);
+    }
+
+    100% {
+        transform: translate(0, 0);
     }
 }
