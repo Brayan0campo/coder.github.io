@@ -216,6 +216,7 @@ nav.navbar {
 .btn_info:hover {
     color: #F5F5F5;
     background-color: #263238;
+    transition: 0.6s;
 }
 
 /* ------------------------------- */
