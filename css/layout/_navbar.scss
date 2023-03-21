@@ -1,0 +1,38 @@
+.navbar {
+    max-width: 68.75rem;
+    margin: 0 auto;
+    background-color: $color-primary;
+
+    .container-fluid {
+        a {
+            color: $color-background;
+            font-weight: bold;
+            font-size: 1.0625em;
+            margin-left: 1.5rem;
+
+            &:hover {
+                color: $color-secondary;
+            }
+        }
+
+        .navbar-brand {
+            margin: 0;
+            color: $color-background;
+            font-size: 1.5625rem;
+
+            &:hover {
+                color: $color-background;
+            }
+        }
+
+        .collapse {
+            justify-content: end;
+        }
+
+        .navbar-toggler {
+            border: none;
+            color: $color-primary;
+            background-color: $color-background;
+        }
+    }
+}

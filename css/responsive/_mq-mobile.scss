@@ -1,0 +1,303 @@
+@media screen and (max-width: 576px) {
+
+    .header-index {
+        &__intro {
+            text-align: center;
+            margin: 2.5rem auto;
+            max-width: 70%;
+        }
+
+        &__img {
+            display: none;
+        }
+    }
+
+    .section-services {
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+
+        &__service {
+            width: 11.25rem;
+            margin: 0.5rem;
+            box-shadow: 0 .5rem 1.25rem 0 rgba(0, 0, 0, 0.702);
+        }
+    }
+
+    .section-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: 1.6em;
+        }
+
+        .courses {
+            width: 23rem;
+            margin-top: 5rem;
+            margin-bottom: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .course-1 {
+                text-align: center;
+                margin: 2rem;
+
+                p {
+                    margin: 2rem;
+                    text-align: center;
+                }
+            }
+
+            .course-2 {
+                text-align: center;
+                margin: 2rem;
+
+                p {
+                    margin: 2rem;
+                    text-align: center;
+                }
+            }
+
+            img {
+                width: 12rem;
+            }
+        }
+    }
+
+    .section-contact {
+        &__form {
+            width: 23rem;
+            display: flex;
+            justify-content: center;
+
+            img {
+                display: none;
+            }
+
+            form {
+                padding: 3.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    .footer_menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ------------------------------- */
+
+    .header-courses {
+        img {
+            display: none;
+        }
+
+        &__intro {
+            text-align: center;
+            margin: 4rem auto;
+            max-width: 75%;
+
+            .btn_plans {
+                margin-top: 2rem;
+            }
+
+            .btn_login {
+                margin: 1.5rem 0 0;
+            }
+        }
+    }
+
+    .section-courses {
+        flex-direction: column;
+
+        &__list {
+            max-width: 85%;
+            margin-top: 3.125rem;
+            text-align: center;
+
+            ul {
+                text-align: start;
+            }
+        }
+    }
+
+    .section-info {
+        flex-direction: column;
+
+        img {
+            max-width: 85%;
+        }
+
+        &__courses .info {
+            margin: 3.125rem 0;
+            width: 21.875rem;
+        }
+    }
+
+    .section-coming {
+        &__content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    /* ------------------------------- */
+
+    .section-plans {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section-payment {
+        &__method {
+            margin-left: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+
+    /* ------------------------------- */
+
+    .header-about {
+        img {
+            display: none;
+        }
+
+        &__intro {
+            margin: 4rem;
+            max-width: 100%;
+
+            h1 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    .section-companies {
+        h2 {
+            font-size: 1.1em;
+        }
+
+        &__list {
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 0.8rem;
+            grid-row-gap: 1.5rem;
+        }
+    }
+
+    .section-mission {
+        h2 {
+            font-size: 1.1em;
+            margin-top: 7rem;
+        }
+
+        &__content {
+            width: 85%;
+            flex-direction: column;
+
+            img {
+                width: 17rem;
+            }
+
+            .mission {
+                text-align: justify;
+                margin: .9375rem;
+                max-width: 100%;
+            }
+
+            &:hover .mission {
+                background-color: #263238;
+                border-radius: 10px;
+                transform: translateY(-6%);
+                transition: 0.5s;
+            }
+        }
+    }
+
+    .section-values {
+        h2 {
+            font-size: 1.2em;
+        }
+
+        &__content {
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 2.8125rem;
+        }
+    }
+
+    /* ------------------------------- */
+
+    .section-login {
+        &__img {
+            display: none;
+        }
+
+        &__form {
+            margin: 7rem 0;
+            max-width: 60%;
+
+            h2 {
+                text-align: center;
+            }
+
+            .input {
+                border: none;
+                border-bottom: .0625rem solid #263238;
+                background-color: #F5F5F5;
+                margin-bottom: 1.5rem;
+            }
+
+            label {
+                color: #263238;
+                font-weight: bold;
+                font-size: .8125em;
+            }
+
+            button {
+                border: none;
+                border-radius: .1875rem;
+                cursor: pointer;
+                color: #F5F5F5;
+                background-color: #62249b;
+                font-weight: bold;
+                padding: .5625rem 4.375rem;
+                margin-top: 3rem;
+            }
+
+            .section-login__accounts {
+                color: #263238;
+                font-weight: bold;
+                margin-top: 5rem;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                h3 {
+                    color: #263238;
+                    font-size: 1.125em;
+                    font-weight: bold;
+                    margin: 0;
+                }
+
+                img {
+                    width: 1.6rem;
+                    margin: 0;
+                    padding: 0;
+                    cursor: pointer;
+                    border-radius: .9375rem;
+                }
+            }
+        }
+    }
+}

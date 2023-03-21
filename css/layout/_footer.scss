@@ -1,0 +1,36 @@
+
+footer {
+    padding-top: 12.7rem;
+    background-color: $color-primary;
+
+    .footer_menu {
+        max-width: 68.75rem;
+        margin: 0 auto;
+        padding: 1rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            color: $color-background;
+            font-size: 1.25em;
+            font-weight: bold;
+            margin: .625rem 4.375rem .625rem 0;
+        }
+
+        a,
+        p {
+            color: $color-background;
+            font-weight: bold;
+            font-size: .8125em;
+            margin: .625rem;
+        }
+    }
+}
+
+.footer_pages {
+    background-color: $color-primary;
+    padding-top: 1.25rem;
+    bottom: 0;
+}
