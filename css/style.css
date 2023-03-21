@@ -86,7 +86,6 @@ header {
 }
 .header-index__img {
   margin: 3rem auto 2rem;
-  width: 21.875rem;
   animation: float 2.8s ease-in-out infinite;
 }
 
@@ -99,7 +98,6 @@ header {
   align-items: center;
 }
 .header-courses img {
-  width: 23rem;
   margin: 0.5rem 5rem 0.5rem 0;
   animation: float 2.8s ease-in-out infinite;
 }
@@ -158,7 +156,6 @@ header {
   justify-content: space-between;
 }
 .header-about img {
-  width: 23rem;
   margin-right: 3.75rem;
   animation: float 2.8s ease-in-out infinite;
 }
@@ -251,7 +248,6 @@ header {
   transform: translateX(0%);
 }
 .section-details .courses img {
-  width: 15rem;
   margin: 1.25rem 3.125rem 1.25rem 3.125rem;
 }
 .section-details .courses p {
@@ -311,7 +307,6 @@ header {
   transition: transform 0.5s ease-in-out;
 }
 .section-contact__form img {
-  width: 16rem;
   margin: 3rem;
 }
 .section-contact__form h2 {
@@ -392,7 +387,6 @@ header {
   justify-content: space-between;
 }
 .section-info img {
-  width: 35rem;
   animation: float 2.8s ease-in-out infinite;
 }
 .section-info__courses .info {
@@ -518,7 +512,6 @@ header {
   justify-content: space-between;
 }
 .section-mission__content img {
-  width: 22rem;
   margin: 0 3rem 0 2rem;
   animation: float 2.8s ease-in-out infinite;
 }
