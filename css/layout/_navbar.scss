@@ -1,6 +1,5 @@
 .navbar {
-    max-width: 68.75rem;
-    margin: 0 auto;
+    @include max-width-margin;
     background-color: $color-primary;
 
     .container-fluid {

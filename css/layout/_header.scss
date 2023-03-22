@@ -2,10 +2,8 @@
 /* ------------------------------- */
 
 .header-index {
-    max-width: 68.75rem;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
+    @include max-width-margin;
+    @include center-space;
 
     &__intro {
         max-width: 50%;
@@ -26,7 +24,7 @@
 
     &__img {
         margin: 3rem auto 2rem;
-        animation: float 2.8s ease-in-out infinite;
+        @include animate(float, 2.8s);
     }
 }
 
@@ -34,15 +32,12 @@
 /* ------------------------------- */
 
 .header-courses {
-    max-width: 68.75rem;
-    margin: 0 auto;
-
-    display: flex;
-    align-items: center;
+    @include max-width-margin;
+    @include center-space;
 
     img {
         margin: 0.5rem 5rem 0.5rem 0;
-        animation: float 2.8s ease-in-out infinite;
+        @include animate(float, 2.8s);
     }
 
     &__intro {
@@ -101,15 +96,12 @@
 /* ------------------------------- */
 
 .header-about {
-    max-width: 68.75rem;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include max-width-margin;
+    @include center-space;
 
     img {
         margin-right: 3.75rem;
-        animation: float 2.8s ease-in-out infinite;
+        @include animate(float, 2.8s);
     }
 
     &__intro {

@@ -1,0 +1,26 @@
+@mixin animate($animation, $duration) {
+    animation: $animation $duration ease-in-out infinite;
+}
+
+@mixin max-width-margin {
+    max-width: 68.75rem;
+    margin: 0 auto;
+}
+
+@mixin center-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin center-space {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin center-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
