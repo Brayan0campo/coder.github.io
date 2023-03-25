@@ -687,7 +687,7 @@ header {
   font-weight: bold;
   margin-bottom: 2.8125rem;
 }
-.section-login__form .input {
+.section-login__form .input-login {
   border: none;
   border-bottom: 0.0625rem solid #263238;
   background-color: #F5F5F5;
@@ -780,6 +780,22 @@ footer .footer_menu p {
   .section-courses__list ul {
     text-align: start;
   }
+  .section-info {
+    justify-content: center;
+  }
+  .section-info img {
+    max-width: 80%;
+  }
+  .section-info__courses .info {
+    margin: 3.125rem 0;
+  }
+  .section-info__courses .info:hover {
+    transform: translateY(-15%);
+    transition: 0.5s;
+  }
+  .section-values__content .value {
+    width: 280px;
+  }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .header-index__intro {
@@ -822,6 +838,21 @@ footer .footer_menu p {
   }
   .section-courses__list ul {
     text-align: start;
+  }
+  /* ------------------------------- */
+  .section-plans {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .section-plans__list {
+    width: 500px;
+  }
+  .section-payment__method {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   /* ------------------------------- */
   .header-about img {
@@ -897,6 +928,29 @@ footer .footer_menu p {
     align-items: center;
   }
   /* ------------------------------- */
+  .section-info {
+    flex-direction: column;
+  }
+  .section-info img {
+    max-width: 85%;
+  }
+  .section-info__courses .info {
+    margin: 3.125rem 0;
+    width: 21.875rem;
+  }
+  /* ------------------------------- */
+  .section-plans {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .section-payment__method {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* ------------------------------- */
   .section-companies h2 {
     font-size: 1.1em;
   }
@@ -929,6 +983,27 @@ footer .footer_menu p {
   .section-values__content {
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 2.8125rem;
+  }
+  /* ------------------------------- */
+  .section-login__img {
+    display: none;
+  }
+  .section-login__form {
+    margin: 7rem 0;
+    max-width: 80%;
+  }
+  .section-login__form h2 {
+    text-align: center;
+  }
+  .section-login__form .input-login input {
+    width: 13.8rem;
+  }
+  .section-login__form .section-login__accounts h3 {
+    text-align: center;
+    font-size: 1em;
+  }
+  .section-login__form .section-login__accounts img {
+    margin: 0.25rem;
   }
 }
 @media screen and (min-width: 761px) and (max-width: 992px) {
@@ -1006,7 +1081,7 @@ footer .footer_menu p {
     max-width: 100%;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 400px) and (max-width: 576px) {
   .header-index__intro {
     text-align: center;
     margin: 2.5rem auto;
@@ -1185,51 +1260,220 @@ footer .footer_menu p {
   }
   .section-login__form {
     margin: 7rem 0;
-    max-width: 60%;
+    max-width: 80%;
   }
   .section-login__form h2 {
     text-align: center;
   }
-  .section-login__form .input {
-    border: none;
-    border-bottom: 0.0625rem solid #263238;
-    background-color: #F5F5F5;
-    margin-bottom: 1.5rem;
-  }
-  .section-login__form label {
-    color: #263238;
-    font-weight: bold;
-    font-size: 0.8125em;
-  }
-  .section-login__form button {
-    border: none;
-    border-radius: 0.1875rem;
-    cursor: pointer;
-    color: #F5F5F5;
-    background-color: #62249b;
-    font-weight: bold;
-    padding: 0.5625rem 4.375rem;
-    margin-top: 3rem;
-  }
-  .section-login__form .section-login__accounts {
-    color: #263238;
-    font-weight: bold;
-    margin-top: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  .section-login__form .input-login input {
+    width: 13.8rem;
   }
   .section-login__form .section-login__accounts h3 {
-    color: #263238;
-    font-size: 1.125em;
-    font-weight: bold;
-    margin: 0;
+    text-align: center;
+    font-size: 1em;
   }
   .section-login__form .section-login__accounts img {
-    width: 1.6rem;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    border-radius: 0.9375rem;
+    margin: 0.25rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 399px) {
+  .header-index__intro {
+    text-align: center;
+    margin: 2.5rem auto;
+    max-width: 70%;
+  }
+  .header-index__img {
+    display: none;
+  }
+  .section-services {
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section-services__service {
+    width: 11.25rem;
+    margin: 0.5rem;
+    box-shadow: 0 0.5rem 1.25rem 0 rgba(0, 0, 0, 0.702);
+  }
+  .section-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-details h2 {
+    font-size: 1.6em;
+  }
+  .section-details .courses {
+    width: 18rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section-details .courses .course-1 {
+    text-align: center;
+    margin: 2rem;
+  }
+  .section-details .courses .course-1 p {
+    margin: 2rem;
+    text-align: center;
+  }
+  .section-details .courses .course-2 {
+    text-align: center;
+    margin: 2rem;
+  }
+  .section-details .courses .course-2 p {
+    margin: 2rem;
+    text-align: center;
+  }
+  .section-details .courses img {
+    width: 12rem;
+  }
+  .section-contact__form {
+    width: 18rem;
+    display: flex;
+    justify-content: center;
+  }
+  .section-contact__form img {
+    display: none;
+  }
+  .section-contact__form form {
+    padding: 3.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-contact__form input {
+    width: 12.5rem;
+  }
+  .footer_menu {
+    display: flex;
+    flex-direction: column;
+  }
+  /* ------------------------------- */
+  .header-courses img {
+    display: none;
+  }
+  .header-courses__intro {
+    text-align: center;
+    margin: 4rem auto;
+    max-width: 75%;
+  }
+  .header-courses__intro .btn_plans {
+    margin-top: 2rem;
+  }
+  .header-courses__intro .btn_login {
+    margin: 1.5rem 0 0;
+  }
+  .section-courses {
+    flex-direction: column;
+  }
+  .section-courses__list {
+    max-width: 85%;
+    margin-top: 3.125rem;
+    text-align: center;
+  }
+  .section-courses__list ul {
+    text-align: start;
+  }
+  .section-info {
+    flex-direction: column;
+  }
+  .section-info img {
+    max-width: 85%;
+  }
+  .section-info__courses .info {
+    margin: 3.125rem 0;
+    width: 18rem;
+  }
+  .section-info__courses .info:hover {
+    transform: translateY(-15%);
+    transition: 0.5s;
+  }
+  .section-coming__content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* ------------------------------- */
+  .section-plans {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .section-payment__method {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* ------------------------------- */
+  .header-about img {
+    display: none;
+  }
+  .header-about__intro {
+    text-align: center;
+    margin: 4rem auto;
+    max-width: 80%;
+  }
+  .section-companies h2 {
+    text-align: center;
+    font-size: 1.1em;
+  }
+  .section-companies__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0.8rem;
+    grid-row-gap: 1.5rem;
+  }
+  .section-mission h2 {
+    font-size: 1.1em;
+    margin-top: 7rem;
+  }
+  .section-mission__content {
+    width: 85%;
+    flex-direction: column;
+  }
+  .section-mission__content img {
+    width: 15rem;
+  }
+  .section-mission__content .mission {
+    text-align: center;
+    margin: 0.9375rem;
+    max-width: 100%;
+  }
+  .section-mission__content:hover .mission {
+    background-color: #263238;
+    border-radius: 0.625rem;
+    transform: translateY(-6%);
+    transition: 0.5s;
+  }
+  .section-values h2 {
+    font-size: 1.1em;
+  }
+  .section-values__content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 2.8125rem;
+  }
+  .section-values__content .value {
+    width: 270px;
+  }
+  /* ------------------------------- */
+  .section-login__img {
+    display: none;
+  }
+  .section-login__form {
+    margin: 7rem 0;
+    max-width: 80%;
+  }
+  .section-login__form h2 {
+    text-align: center;
+  }
+  .section-login__form .input-login input {
+    width: 13.8rem;
+  }
+  .section-login__form .section-login__accounts h3 {
+    text-align: center;
+    font-size: 1em;
+  }
+  .section-login__form .section-login__accounts img {
+    margin: 0.25rem;
   }
 }/*# sourceMappingURL=style.css.map */
